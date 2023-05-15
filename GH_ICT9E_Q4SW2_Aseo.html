@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<title>Time Converter!</title>
+
+	<style>
+		td, th {
+			text-align: center;
+		}
+		.lael {
+			background-image: url(https://wallpaperset.com/w/full/8/2/3/471162.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.lol {
+			background-image: url(https://wallpaperset.com/w/full/4/d/9/471161.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.prl {
+			background-color: #195900;
+  			border: none;
+  			color: white;
+  			padding: 10px 20px;
+  			text-align: center;
+		}
+		.gr {
+			background-color: #fcad03;
+		}
+		body {
+			font-family: 'Lato', sans-serif;
+			color: white;
+		}
+		.el {
+		border-radius: 5px;
+		border: solid;
+		border-color: #195900;
+		border-width: 10px;
+  		background-color: #2b9600;
+  		padding: 20px;
+  		}
+	</style>
+</head>
+<body>
+<div class="row middle">
+	<div class="col-xl-3 lael"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+	<div class="col-xl-6 gr">
+		<center><br><br><br><br><br><br><br><br><div class="el"><p><br>
+		Time Converter!<br>
+		Hours to Seconds, Minutes and Days<br><br>
+		<input type="text" id="value" placeholder="Input Value Here"><br>
+		<br>
+		<button type="button" class="btn btn-sm prl" onclick="sec()">Seconds</button>
+		<button type="button" class="btn btn-sm prl" onclick="min()">Minutes</button>
+		<button type="button" class="btn btn-sm prl" onclick="day()">Days</button>
+		<div>Value: <p id="id1"></p></div>
+	<script>
+		function sec() {
+		var n1 = document.getElementById('value').value;
+		var n2 = 3600;
+		var n3 = " seconds";
+		var add = Number(n1) * Number(n2) + n3;
+		document.getElementById('id1').innerHTML = add;
+		}
+
+		function min() {
+		var n1 = document.getElementById('value').value;
+		var n2 = 60;
+		var n4 = " minutes";
+		var sub = Number(n1) * Number(n2) + n4;
+		document.getElementById('id1').innerHTML = sub;
+		}
+
+		function day() {
+		var n1 = document.getElementById('value').value;
+		var n2 = 24;
+		var n5 = " days";
+		var mul = Number(n1) / Number(n2) + n5;
+		document.getElementById('id1').innerHTML = mul;
+		}
+	</script>
+	</p></div></center>
+	</div>
+	<div class="col-xl-3 lol"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+</body>
+</html>
